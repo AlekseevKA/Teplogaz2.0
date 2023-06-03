@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE870"
+    tools:context=".FiveActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/leninBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zakrugkray"
+        android:fontFamily="@font/qwe"
+        android:text="@string/leninBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/kanalBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/zakrugkray"
+        android:fontFamily="@font/qwe"
+        android:text="@string/kanalBtn"
+        app:layout_constraintEnd_toEndOf="@+id/samotekBtn"
+        app:layout_constraintStart_toStartOf="@+id/samotekBtn"
+        app:layout_constraintTop_toBottomOf="@+id/samotekBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/samotekBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/zakrugkray"
+        android:fontFamily="@font/qwe"
+        android:text="@string/samotekBtn"
+        app:layout_constraintEnd_toEndOf="@+id/leninBtn"
+        app:layout_constraintStart_toStartOf="@+id/leninBtn"
+        app:layout_constraintTop_toBottomOf="@+id/leninBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE870"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="360dp"
+        android:background="@drawable/qwew"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ustrBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/qwe"
+        android:text="@string/ustrBtn"
+        app:layout_constraintEnd_toEndOf="@+id/logoImage"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/logoImage"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/materialBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/qwe"
+        android:text="@string/materialBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ustrBtn"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="@+id/ustrBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ustrBtn"
+        app:layout_constraintVertical_bias="0.165" />
+</androidx.constraintlayout.widget.ConstraintLayout>

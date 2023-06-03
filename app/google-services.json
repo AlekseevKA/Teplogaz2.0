@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "273968160963",
+    "project_id": "bash-1b828",
+    "storage_bucket": "bash-1b828.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273968160963:android:de57cc547c75aadd42c276",
+        "android_client_info": {
+          "package_name": "com.example.teplogaz20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273968160963-sqr8l92pb8g23f2n6tmq10khjdf5qefs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ4sKb1LNiVjDiRAFPvnMD2AUALE-oBlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273968160963-sqr8l92pb8g23f2n6tmq10khjdf5qefs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
