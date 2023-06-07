@@ -1,6 +1,8 @@
 package com.example.teplogaz20.ui.home;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +23,7 @@ import com.example.teplogaz20.databinding.FragmentHomeBinding;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
-    AppCompatButton materialBtn, ustrBtn, navBtn;
+    AppCompatButton materialBtn, ustrBtn;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,6 +35,9 @@ public class HomeFragment extends Fragment {
 
 
         return root;
+
+
+
     }
 
     @Override
@@ -42,7 +47,20 @@ public class HomeFragment extends Fragment {
 
         ustrBtn = (AppCompatButton) getActivity().findViewById(R.id.ustrBtn);
 
-
+        // Создание цветового состояния для нажатия
+        ColorStateList colorStateList = new ColorStateList(
+                new int[][]{
+                        new int[]{android.R.attr.state_pressed},
+                        new int[]{}
+                },
+                new int[]{
+                        Color.YELLOW, // Цвет текста для состояния нажатия (синий)
+                        Color.BLACK // Цвет текста для обычного состояния (белый)
+                }
+        );
+// Установка цветового состояния для текста кнопки
+        materialBtn.setTextColor(colorStateList);
+        ustrBtn.setTextColor(colorStateList);
 
         materialBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,4 +80,5 @@ public class HomeFragment extends Fragment {
         });
 
     }
+
 }

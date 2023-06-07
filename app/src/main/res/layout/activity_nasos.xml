@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KanalActivity">
+    tools:context=".NasosActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,30 +24,23 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+
                 <ImageView
-                    android:id="@+id/imageViewKanal"
-                    android:layout_width="372dp"
-                    android:layout_height="318dp"
-                    android:rotationX="0"
-                    android:src="@drawable/kanalka"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                    android:id="@+id/imageViewNasos"
+                    android:layout_width="327dp"
+                    android:layout_height="322dp"
+                    android:background="@drawable/nasos" />
 
                 <TextView
-                    android:id="@+id/textViewData3"
+                    android:id="@+id/textViewNasos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/qwe"
-                    android:padding="15dp"
-                    android:textColor="#000000"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.492"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageViewKanal"
-                    app:layout_constraintVertical_bias="0.444" />
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="#000000" />
 
             </LinearLayout>
 

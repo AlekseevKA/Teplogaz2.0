@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/zakrugkray"
         android:fontFamily="@font/qwe"
-        android:text="Благоустройства"
+        android:text="Системы отопления"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

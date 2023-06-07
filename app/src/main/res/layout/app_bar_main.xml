@@ -15,8 +15,9 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.Teplogaz20.PopupOverlay" />
+            android:background="#656663"
+            app:popupTheme="@style/Theme.Teplogaz20.PopupOverlay"
+             />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -29,6 +30,8 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
+        android:background="#DBDBDB"
+        app:backgroundTint="#DBDBDB"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

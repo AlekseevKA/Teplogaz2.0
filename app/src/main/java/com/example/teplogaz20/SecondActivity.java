@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 public class SecondActivity extends AppCompatActivity {
-    AppCompatButton opisBtn;
+    AppCompatButton opisBtn, cotelButton, radiatorButton, bakButton, buttonNasos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,10 @@ public class SecondActivity extends AppCompatActivity {
 
 
         opisBtn = findViewById(R.id.opisBtn);
+        cotelButton = findViewById(R.id.cotelButton);
+        radiatorButton = findViewById(R.id.radiatorButton);
+        bakButton = findViewById(R.id.bakButton);
+        buttonNasos = findViewById(R.id.buttonNasos);
 
         // Создание цветового состояния для нажатия
         ColorStateList colorStateList = new ColorStateList(
@@ -33,12 +37,40 @@ public class SecondActivity extends AppCompatActivity {
         );
 // Установка цветового состояния для текста кнопки
         opisBtn.setTextColor(colorStateList);
+        cotelButton.setTextColor(colorStateList);
+        radiatorButton.setTextColor(colorStateList);
+        bakButton.setTextColor(colorStateList);
+        buttonNasos.setTextColor(colorStateList);
 
 
         opisBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(SecondActivity.this, ThirdActivity.class));
+            }
+        });
+        cotelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SecondActivity.this, cotelActivity.class));
+            }
+        });
+        radiatorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SecondActivity.this, RadiatorActivity.class));
+            }
+        });
+        bakButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SecondActivity.this, BakActivity.class));
+            }
+        });
+        buttonNasos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SecondActivity.this, NasosActivity.class));
             }
         });
     }

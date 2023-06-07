@@ -38,7 +38,7 @@ public class ThirdActivity extends AppCompatActivity {
         imageViewPipe = findViewById(R.id.imageViewPipe);
 
         //получаем ссылку на базу данных Firebase
-        databaseReference = FirebaseDatabase.getInstance("https://bash-1b828-default-rtdb.europe-west1.firebasedatabase.app/").getReference("data/check");
+        databaseReference = FirebaseDatabase.getInstance("https://bash-1b828-default-rtdb.europe-west1.firebasedatabase.app/").getReference("data/pipes");
         FirebaseStorage firebaseStorage = FirebaseStorage.getInstance("gs://bash-1b828.appspot.com");
         storageReference = firebaseStorage.getReferenceFromUrl("gs://bash-1b828.appspot.com/pipes/2b303a4cde14c04f479b58fa35354224.png");
 
